@@ -20,8 +20,8 @@ namespace VinhShop.Model.Models
 
         public int? DisplayOrder { set; get; }
 
-        //[Required]
-        //public int GroupID { set; get; }
+        [Required]
+        public int GroupID { set; get; }
 
         [ForeignKey("GroupID")]
         public virtual MenuGroup MenuGroup { set; get; }
