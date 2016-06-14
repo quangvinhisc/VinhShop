@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using VinhShop.Data.Infrastructure;
 using VinhShop.Model.Models;
 
@@ -19,7 +16,6 @@ namespace VinhShop.Data.Repositories
             : base(dbFactory)
         {
         }
-
 
         public IEnumerable<ProductCategory> GetByAlias(string alias)
         {

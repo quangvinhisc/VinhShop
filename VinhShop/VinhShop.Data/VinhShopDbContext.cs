@@ -33,7 +33,6 @@ namespace VinhShop.Data
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            
         }
     }
 }

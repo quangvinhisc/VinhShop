@@ -42,22 +42,22 @@ namespace VinhShop.Service
 
         public IEnumerable<PostCategory> GetAll()
         {
-            throw new NotImplementedException();
+            return _postCategoryRepository.GetAll();
         }
 
         public IEnumerable<PostCategory> GetAllByParentId(int parentId)
         {
-            throw new NotImplementedException();
+            return _postCategoryRepository.GetMulti(x => x.Status && x.ParentID == parentId);
         }
 
         public PostCategory GetById(int id)
         {
-            throw new NotImplementedException();
+            return _postCategoryRepository.GetSingleById(id);
         }
 
         public void Update(PostCategory postCategory)
         {
-            throw new NotImplementedException();
+            _postCategoryRepository.Update(postCategory);
         }
     }
 }

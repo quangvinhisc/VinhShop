@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace VinhShop.Model.Models
 {
@@ -12,7 +7,7 @@ namespace VinhShop.Model.Models
     public class OrderDetail
     {
         [Key]
-        [Column(Order =1)]
+        [Column(Order = 1)]
         public int OrderID { set; get; }
 
         [Key]
